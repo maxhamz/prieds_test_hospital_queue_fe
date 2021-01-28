@@ -1,0 +1,30 @@
+<div style="padding: 13px;">
+    <p>visitor-list works!</p>
+    <mat-spinner *ngIf="visitors.length === 0"></mat-spinner>
+
+    <mat-card *ngFor="let visitor of visitors" style="margin-top:10px;">
+        <mat-card-header>
+            <mat-card-title>{{visitor.strFullName}}</mat-card-title>
+            <mat-card-subtitle>{{visitor.dtBirth}} 
+            </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                ID: {{visitor.id}}
+            </p>
+            <p>
+                Gender: {{visitor.eGener}}
+            </p>
+            <p>
+                Address: {{visitor.strAddress}}
+            </p>
+            <p>
+                Govt ID: {{visitor.strGovtIdNo}}
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+    </mat-card-actions>
+    </mat-card>
+</div>
+
+
